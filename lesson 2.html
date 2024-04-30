@@ -87,7 +87,21 @@ presto-playlist-ui {
 .hydrated {
   visibility: inherit;
 }
-        </style>
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+</style>
 <script type="text/javascript">
 
 	var isInIFrame = ( window.self !== window.top ) ? true : false;
@@ -664,7 +678,7 @@ Lesson 1.4 – Digital marketing vs. traditional marketing </div>
 <div class="ld-tabs ld-tab-count-1">
 <div class="ld-tabs-content">
 <div role="tabpanel" tabindex="0" aria-labelledby="content" class="ld-tab-content ld-visible" id="ld-tab-content-953">
-<div class="presto-iframe-fallback-container">
+<div class="iframe-container">
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/ZVuHLPl69mM?si=73JzSTESjm8_tjbq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 </presto-player>
