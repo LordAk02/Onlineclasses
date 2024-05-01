@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Congratulations!</title>
+<style>
+/* Styles for the center section */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.center-section {
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+/* Styles for the balloons */
+.balloon {
+  width: 30px;
+  height: 40px;
+  background-color: #3498db;
+  border-radius: 50%;
+  position: absolute;
+  animation: balloon-animation 3s ease-in-out infinite;
+}
+
+@keyframes balloon-animation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-100px) rotate(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+/* Styles for the particles */
+.particle {
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  animation: particle-animation 2s linear infinite;
+}
+
+@keyframes particle-animation {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(200vh) rotate(360deg) scale(0);
+    opacity: 0;
+  }
+}
+
+/* Additional styles */
+@keyframes explode {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+</style>
+</head>
+<body>
+<div class="center-section">
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <h2>Congratulations!</h2>
+  <p>This is the end of the digital marketing introduction. In the next lesson, you will answer questions, and your progress will be tracked. Congrats!</p>
+  <button onclick="saveAndExit()">Save and Exit</button>
+</div>
+<script>
+// JavaScript for creating particles
+document.addEventListener("DOMContentLoaded", function() {
+  const centerSection = document.querySelector(".center-section");
+
+  function createParticle() {
+    const particle = document.createElement("div");
+    particle.classList.add("particle");
+    particle.style.left = Math.random() * window.innerWidth + "px";
+    centerSection.appendChild(particle);
+
+    setTimeout(() => {
+      particle.remove();
+    }, 2000);
+  }
+
+  setInterval(createParticle, 100);
+});
+
+function saveAndExit() {
+  // Add your save and exit logic here
+  alert("File saved. Exiting now...");
+  window.close(); // Close the window/tab
+}
+</script>
+</body>
+</html>
