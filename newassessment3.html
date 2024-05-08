@@ -2,6 +2,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<link href="quiz.css" rel="stylesheet">
+
 <style>
             @supports not (aspect-ratio: 16 / 9) {
   presto-player:not(.hydrated) {
@@ -532,6 +534,29 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PW78FQ8');</script>
+<script>
+    function disableLinkForHour() {
+        var link = document.getElementById("myLink");
+        link.removeAttribute("href"); // Remove the href attribute
+        var remainingTimeDisplay = document.getElementById("remainingTime");
+    
+        var remainingSeconds = 3600; // 3600 seconds = 1 hour
+        var interval = setInterval(function() {
+            remainingSeconds--;
+    
+            if (remainingSeconds <= 0) {
+                clearInterval(interval);
+                link.setAttribute("href", "https://example.com"); // Re-enable the link after an hour
+                remainingTimeDisplay.textContent = "Link enabled!";
+            } else {
+                var hours = Math.floor(remainingSeconds / 3600);
+                var minutes = Math.floor((remainingSeconds % 3600) / 60);
+                var seconds = remainingSeconds % 60;
+                remainingTimeDisplay.textContent = "Class will Start in: " + hours + "h " + minutes + "m " + seconds + "s";
+            }
+        }, 1000); // Update every second
+    }
+    </script>
 
 <script>
 			( function() {
@@ -575,7 +600,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h3>
 <a href="#" id="ld-focus-mode-course-heading">
 <span class="ld-icon ld-icon-content"></span>
-Watch all video  </a>
+Course Dashboard  </a>
 </h3>
 </div>
 <div class="ld-focus-sidebar-wrapper">
@@ -588,53 +613,51 @@ Watch all video  </a>
 <a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="newassessment.html">
 <div class="ld-status-icon ld-status-complete"></div>
 <div class="ld-lesson-title">
-Lesson 2.1 – Introduction to Social Marketing  </div> 
+Lesson 1.1 – Introduction </div> 
 </a> 
 </div>
-</div>
-<div class="ld-lesson-item ld-is-current-lesson learndash-incomplete is_not_sample">
+</div> 
+<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
 <div class="ld-lesson-item-preview">
-<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="#">
-<div class="ld-status-icon ld-status-incomplete"></div>
-<div class="ld-lesson-title">
-Lesson 2.2 – Strategy Development in Social media Marketing </div> 
+<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="newassessment2.html"  >
+<div class="ld-status-icon ld-status-complete"></div>
+<div class="ld-lesson-title"> Lesson 1.2 – Overview of digital marketing </div> 
 </a> 
 </div> 
-</div>
-<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+</div> 
+<div class="ld-lesson-item ld-is-current-lesson learndash-incomplete is_not_sample">
+<div class="ld-lesson-item-preview">
+<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="index3.html">
+<div class="ld-status-icon ld-status-complete"></div>
+<div class="ld-lesson-title">
+Lesson 1.3 – Evolution of digital marketing </div>
+</a> 
+</div> 
+</div> 
+<div class="ld-lesson-item ld-is-current-lesson learndash-incomplete is_not_sample">
 	<div class="ld-lesson-item-preview" style="padding-left: 50px;">
-	<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="update3.html">
-	<div class="ld-status-icon ld-status-incomplete"></div>
+	<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="update4.html">
+	<div class="ld-status-icon ld-status-complete"></div>
 	<div class="ld-lesson-title">
 	Overview</div> 
 	</a> 
 	</div>
 	</div>
-	<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item ld-is-current-lesson learndash-incomplete is_not_sample">
 		<div class="ld-lesson-item-preview" style="padding-left: 50px;">
-		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="?">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="newassessment3.html">
 		<div class="ld-status-icon ld-status-incomplete"></div>
 		<div class="ld-lesson-title">
 		Assessment</div> 
 		</a> 
 		</div> 
-		</div>  
+		</div> 
 <div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
 <div class="ld-lesson-item-preview">
-<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="?">
+<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="index333.html">
 <div class="ld-status-icon ld-status-incomplete"></div>
 <div class="ld-lesson-title">
-Lesson 2.3 – Content Creation in social media marketing </div>
-</a> 
-</div> 
-</div> 
-
-<div class="ld-lesson-item ld-is-not-current-lesson learndash-incomplete is_not_sample">
-<div class="ld-lesson-item-preview">
-<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="?">
-<div class="ld-status-icon ld-status-incomplete"></div>
-<div class="ld-lesson-title">
-Lesson 2.4 – Paid Advertising in Social media marketing </div> 
+Lesson 1.4 – Digital marketing vs. traditional marketing </div> 
 </a> 
 </div> 
 </div> 
@@ -659,7 +682,7 @@ Lesson 2.4 – Paid Advertising in Social media marketing </div>
 <div class="ld-content-action ld-empty">
 </div>
 <div class="ld-content-action ">
-<a class="ld-button ld-button-transparent" href="update3.html">
+<a class="ld-button ld-button-transparent" href="index333.html">
 <span class="ld-text">Next Lesson</span>
 <span class="ld-icon ld-icon-arrow-right"></span>
 </a>
@@ -667,85 +690,28 @@ Lesson 2.4 – Paid Advertising in Social media marketing </div>
 </div> 
 </div> 
 <div class="ld-focus-content">
-<h1>Lesson 2.2 – Strategy Development in Social media Marketing</h1>
+<h1>Assessment</h1>
 <div class="learndash learndash_post_sfwd-lessons user_has_access" id="learndash_post_953">
 <div class="learndash-wrapper">
 <div class="learndash-wrapper learndash-wrap learndash-shortcode-wrap learndash-shortcode-wrap-ld_infobar-952_953_0">
 <div class="ld-lesson-status">
 <div class="ld-breadcrumbs">
 <div class="ld-breadcrumbs-segments">
-<span><a href="#">Watch Video to understand lessons </a> </span>
-<span><a href="https://websitedemos.net/learn-digital-marketing-02/courses/sit-iaculis-ullamcorper-viverra-curabitur-turpis/lessons/lesson-1-1-introduction/">Lesson 1.1 – Introduction</a> </span>
+<span><a href="#">Your Next lesson Starts In</a> </span>
+<span><div id="timer">00:00:00</div>  </span>
 </div> 
 </div> 
 </div>
 </div>
 <div class="ld-tabs ld-tab-count-1">
 <div class="ld-tabs-content">
-<div role="tabpanel" tabindex="0" aria-labelledby="content" class="ld-tab-content ld-visible" id="ld-tab-content-953">
-<div class="presto-iframe-fallback-container">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/DWc9LcPb5wo?si=7D3uMtgudff5n6vr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</presto-player>
-</figure> <script>
-            var player = document.querySelector('presto-player#presto-player-1');
-            player.video_id = 1;
-                                                player.preset = {"id":2,"name":"Course","slug":"course","icon":"welcome-learn-more","skin":"stacked","play-large":true,"rewind":true,"play":true,"fast-forward":true,"progress":true,"current-time":true,"mute":true,"volume":true,"speed":true,"pip":true,"fullscreen":true,"captions":false,"reset_on_end":true,"auto_hide":true,"captions_enabled":false,"save_player_position":true,"sticky_scroll":true,"sticky_scroll_position":"bottom right","play_video_viewport":false,"hide_youtube":false,"lazy_load_youtube":false,"hide_logo":false,"border_radius":0,"caption_style":"","caption_background":"","is_locked":true,"cta":[""],"watermark":[""],"email_collection":[""],"action_bar":[""],"created_by":34,"created_at":"2021-09-30 13:26:53","updated_at":"2022-03-04 04:12:24","deleted_at":"","on_video_end":"select","search":[""],"show_time_elapsed":false};
-                                                                player.chapters = [];
-                                                                player.overlays = [];
-                                                                player.tracks = [];
-                                                                player.branding = {"logo":"","color":"#00b3ff","logo_width":150};
-                                                                player.blockAttributes = {"id":1,"src":"https:\/\/youtu.be\/HJRzUQMhJMQ","preset":2,"video_id":"HJRzUQMhJMQ","visibility":"public","color":"#00b3ff","mutedPreview":{"enabled":false,"captions":false},"mutedOverlay":{"enabled":false,"src":"","width":200,"focalPoint":{"x":0.5,"y":0.5}},"mutedOverlayType":"text","mutedOverlayText":"Click to play","mutedOverlayImageWidth":200,"playsInline":true,"chapters":[],"overlays":[],"tracks":[],"title":""};
-                                                                                            player.skin = "stacked";
-                                                                player.analytics = false;
-                                                                player.automations = true;
-                                                                player.provider = "youtube";
-                                                                player.video_id = 1;
-                                                                                                                        player.provider_video_id = "HJRzUQMhJMQ";
-                                                                player.youtube = {"noCookie":false,"channelId":"","show_count":false};
-                                    </script>
-<p class="has-text-color" style="color:#1e2428"><strong>How to optimize the use of Canza.</strong></p>
-<pclass="has-text-color" style="color:#1e2428"><strong>Freelance Design Services: </strong> Use Canva to create designs for clients as part of freelance graphic design services. You can offer your design expertise to create custom graphics, social media posts, logos, presentations, and more for businesses, individuals, or organizations.</br>
--Sell Digital Products: Create and sell digital products such as printable planners, worksheets, social media templates, or e-books using designs made in Canva. Platforms like Etsy or Gumroad can be used to sell these digital products. </br>
-	
--Affiliate Marketing: Join Canva's affiliate program or promote Canva Pro subscriptions as an affiliate. You can earn a commission for every person who signs up for Canva Pro through your affiliate link.</br>
-	
--Create Online Courses or Tutorials: Share your Canva design expertise by creating online courses, tutorials, or e-books teaching others how to use Canva effectively. You can sell these resources through platforms like Udemy, Teachable, or your website.</br>
-	
--Content Creation: Use Canva to create engaging content for your blog, website, or social media channels. By consistently sharing valuable content, you can grow your audience and potentially monetize through sponsored content, advertising, or affiliate marketing.<br></br>
-</p>
-</div>
-</div> 
-</div> 
-<div class="learndash-wrapper learndash-shortcode-wrap-ld_navigation-952_953_0"><div class="ld-content-actions">
-<div class="ld-content-action ld-empty">
-</div>
-<a href="newassessment.html" class="ld-primary-color">Back to Course</a>
-<div class="ld-content-action ">
-<a class="ld-button " href="update3.html">
-<span class="ld-text">Next Lesson</span>
-<span class="ld-icon ld-icon-arrow-right"></span>
-</a>
+	<div id="quizWrap"></div>
 </div>
 </div> 
 </div>
-</div> 
 </div>
-</div> 
-</div> 
-</div> 
-</div> 
-<div id="showcase-cta-entry-root" class="st-customizer-cta"></div><style>.presto-iframe-fallback-container{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden}.presto-iframe-fallback-container embed,.presto-iframe-fallback-container iframe,.presto-iframe-fallback-container object{position:absolute;top:0;left:0;width:100%;height:100%}</style><script defer="">
-                window.addEventListener("load", function(event) {
-                    setTimeout(function() {
-                        var deferVideo = document.getElementsByClassName("presto-fallback-iframe");
-                        if (!deferVideo.length) return;
-                        Array.from(deferVideo).forEach(function(video) {
-                            video && video.setAttribute("src", video.getAttribute("data-src"));
-                        });
-                    }, 2000);
-                }, false);
-            </script><script id="astra-theme-js-js-extra">
+
+<script id="astra-theme-js-js-extra">
 var astra = {"break_point":"921","isRtl":"","is_scroll_to_id":"","is_scroll_to_top":"","is_header_footer_builder_active":"1"};
 </script>
 <script src="js/frontend.min.js" id="astra-theme-js-js"></script>
@@ -754,12 +720,41 @@ var astra = {"break_point":"921","isRtl":"","is_scroll_to_id":"","is_scroll_to_t
 <script id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 </script>
-<script id="presto-components-js-extra">
-var prestoComponents = {"url":"https:\/\/websitedemos.net\/learn-digital-marketing-02\/wp-content\/plugins\/presto-player\/dist\/components\/web-components\/web-components.esm.js?ver=1712301257"};
-var prestoPlayer = {"plugin_url":"https:\/\/websitedemos.net\/learn-digital-marketing-02\/wp-content\/plugins\/presto-player\/","logged_in":"","root":"https:\/\/websitedemos.net\/learn-digital-marketing-02\/wp-json\/","nonce":"2720d39708","ajaxurl":"https:\/\/websitedemos.net\/learn-digital-marketing-02\/wp-admin\/admin-ajax.php","isAdmin":"","isSetup":{"bunny":false},"proVersion":"","isPremium":"","wpVersionString":"wp\/v2\/","prestoVersionString":"presto-player\/v1\/","debug":"","debug_navigator":"","i18n":{"skip":"Skip","rewatch":"Rewatch","emailPlaceholder":"Email address","emailDefaultHeadline":"Enter your email to play this episode.","chapters":"Chapters","show_chapters":"Show Chapters","hide_chapters":"Hide Chapters","restart":"Restart","rewind":"Rewind {seektime}s","play":"Play","pause":"Pause","fastForward":"Forward {seektime}s","seek":"Seek","seekLabel":"{currentTime} of {duration}","played":"Played","buffered":"Buffered","currentTime":"Current time","duration":"Duration","volume":"Volume","mute":"Mute","unmute":"Unmute","enableCaptions":"Enable captions","disableCaptions":"Disable captions","download":"Download","enterFullscreen":"Enter fullscreen","exitFullscreen":"Exit fullscreen","frameTitle":"Player for {title}","captions":"Captions","settings":"Settings","pip":"PIP","menuBack":"Go back to previous menu","speed":"Speed","normal":"Normal","quality":"Quality","loop":"Loop","start":"Start","end":"End","all":"All","reset":"Reset","disabled":"Disabled","enabled":"Enabled","advertisement":"Ad","qualityBadge":{"2160":"4K","1440":"HD","1080":"HD","720":"HD","576":"SD","480":"SD"},"auto":"AUTO","upNext":"Up Next","startOver":"Start Over"},"learndash":[]};
-var prestoComponents = {"url":"https:\/\/websitedemos.net\/learn-digital-marketing-02\/wp-content\/plugins\/presto-player\/dist\/components\/web-components\/web-components.esm.js?ver=1712301257"};
-var prestoPlayer = {"plugin_url":"https:\/\/websitedemos.net\/learn-digital-marketing-02\/wp-content\/plugins\/presto-player\/","logged_in":"","root":"https:\/\/websitedemos.net\/learn-digital-marketing-02\/wp-json\/","nonce":"2720d39708","ajaxurl":"https:\/\/websitedemos.net\/learn-digital-marketing-02\/wp-admin\/admin-ajax.php","isAdmin":"","isSetup":{"bunny":false},"proVersion":"","isPremium":"","wpVersionString":"wp\/v2\/","prestoVersionString":"presto-player\/v1\/","debug":"","debug_navigator":"","i18n":{"skip":"Skip","rewatch":"Rewatch","emailPlaceholder":"Email address","emailDefaultHeadline":"Enter your email to play this episode.","chapters":"Chapters","show_chapters":"Show Chapters","hide_chapters":"Hide Chapters","restart":"Restart","rewind":"Rewind {seektime}s","play":"Play","pause":"Pause","fastForward":"Forward {seektime}s","seek":"Seek","seekLabel":"{currentTime} of {duration}","played":"Played","buffered":"Buffered","currentTime":"Current time","duration":"Duration","volume":"Volume","mute":"Mute","unmute":"Unmute","enableCaptions":"Enable captions","disableCaptions":"Disable captions","download":"Download","enterFullscreen":"Enter fullscreen","exitFullscreen":"Exit fullscreen","frameTitle":"Player for {title}","captions":"Captions","settings":"Settings","pip":"PIP","menuBack":"Go back to previous menu","speed":"Speed","normal":"Normal","quality":"Quality","loop":"Loop","start":"Start","end":"End","all":"All","reset":"Reset","disabled":"Disabled","enabled":"Enabled","advertisement":"Ad","qualityBadge":{"2160":"4K","1440":"HD","1080":"HD","720":"HD","576":"SD","480":"SD"},"auto":"AUTO","upNext":"Up Next","startOver":"Start Over"},"learndash":{"0":"","course":952,"course_short_description":"","lesson_materials_enabled":"","lesson_materials":"","lesson_video_enabled":"on","lesson_video_url":"(presto-1)","lesson_video_shown":"BEFORE","lesson_video_auto_start":"on","lesson_video_show_controls":"on","lesson_video_focus_pause":"on","lesson_video_track_time":"on","lesson_video_auto_complete":"","lesson_video_auto_complete_delay":0,"lesson_video_show_complete_button":"","lesson_assignment_upload":"","assignment_upload_limit_extensions":"","assignment_upload_limit_size":"","lesson_assignment_points_enabled":"","lesson_assignment_points_amount":"","assignment_upload_limit_count":"","lesson_assignment_deletion_enabled":"","auto_approve_assignment":"","forced_lesson_time_enabled":"","forced_lesson_time":"","lesson_video_hide_complete_button":"on","lesson_schedule":"","sample_lesson":"","visible_after":"","visible_after_specific_date":""}};
+<script src="quizles2.js"></script>
+<script>
+    // Set the target date (you can adjust this as needed)
+    const targetDate = new Date('2024-05-07').getTime() + (5 * 60 * 1000); // 5 minutes from now
+
+    // Update the countdown every second
+    const timerInterval = setInterval(updateTimer, 1000);
+
+    function updateTimer() {
+        // Get the current date and time
+        const now = new Date().getTime();
+
+        // Find the difference between now and the target date
+        const difference = targetDate - now;
+
+        // Calculate remaining time
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        // Display the countdown timer
+        document.getElementById('timer').innerText = `${formatTime(hours)}:${formatTime(minutes)}:${formatTime(seconds)}`;
+
+        // If the countdown is finished, clear the interval
+        if (difference <= 0) {
+            clearInterval(timerInterval);
+            document.getElementById('timer').innerText = "Time's up!";
+        }
+    }
+
+    function formatTime(time) {
+        return time < 10 ? `0${time}` : time;
+    }
 </script>
+
 <script src="js/player-static.js" type="module" defer=""></script><script src="js/learndash_pager.min.js" id="learndash_pager_js-js"></script>
 <script id="learndash_template_script_js-js-extra">
 var sfwd_data = {"json":"{\"ajaxurl\":\"https:\\\/\\\/websitedemos.net\\\/learn-digital-marketing-02\\\/wp-admin\\\/admin-ajax.php\"}"};
